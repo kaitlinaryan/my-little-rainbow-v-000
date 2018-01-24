@@ -13,14 +13,14 @@ Hyper Text Markup Language, or HTML, is a way to demarcate a document into diffe
   + The `/` indicates to the browser that that tag is a closing tag.
   + The element is everything between the tags and the tags themselves.
 - Some tags are self closing like the line break element `<br>`.
-- Elements can have IDs and classes to aid the browser in finding specific tags.
+- Elements can have IDs and classes to aid the browser in finding specific tags. 
   + Must begin with a letter A-Z or a-z.
   + Can be followed by: letters (`A-Za-z`), digits (`0-9`), hyphens (`-`), and underscores (`_`).
   + IDs **can** only be used once per page. E.g.: `<div id="this-special-div"></div>`.
   + Classes can be used as many times as you want. E.g.: `<div class="a-less-special-div"></div>`.
 - Elements nested inside other elements are called children.
   + Children inherit attributes from their parents.
-  + Don't nest everything. 
+  + Don't nest everything.
 - Elements next to one another are siblings.
   + Siblings do not inherit from one another, but are important for selecting in CSS.
 
@@ -57,12 +57,12 @@ First off make sure you have [forked](https://github.com/learn-co-students/my-li
 In that directory you'll see three files. `index.html`, `main.css`, and this `README.md`.  Open them in your text editor via your command line.  Also open `index.html` in your browser; if everything is working correctly you should see a white page. Good job!
 
 ### Making the Divs Visible
-If you use the inspector or look at the file in your text editor, you'll see that the basic file stucture is there.  So why can't we see anything?!?!?  That's because the divs have no styling on them right now.  And that's because we never told the browser to include a CSS file that would apply any styles. 
+If you use the inspector or look at the file in your text editor, you'll see that the basic file stucture is there.  So why can't we see anything?!?!?  That's because the divs have no styling on them right now.  And that's because we never told the browser to include a CSS file that would apply any styles.
 
 Let's fix this by adding the stylesheet to the `head` like so,
 ```html
 <head>
-... 
+...
   <link rel="stylesheet" type="text/css" href="main.css">
 ...
 </head>
